@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>&GYMPOWER&</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-style: italic;
+            }
+            .class{
+                height: 100vh;
+                width: 100vw;
+                background-color: black;
+                display: grid;
+                place-items: center;
+            }
+            h1{
+                position: relative;
+                color: white;
+                font-size: 80px;
+            }
+            h1::before{
+                position: absolute;
+                color: lawngreen;
+                top: 0;
+                left: 0;
+                content:"&~GYMPOWER~&";
+                width: 100%;
+                border-right: 3px solid lawngreen;
+                overflow: hidden;
+                animation: move 3s linear infinite;
+            }
+            @keyframes move{
+                0%{
+                    width: 0%;
+                }
+                50%{
+                    width: 100%;
+                }
+                100%{
+                    width: 0%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="class">
+            <h1>&~GYMPOWER~&</h1>
+        </div>
+    </body>
+    </html>
+</body>
+</html>
